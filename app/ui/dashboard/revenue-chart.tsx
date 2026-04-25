@@ -2,6 +2,7 @@ import { generateYAxis } from '@/app/lib/utils';
 import { CalendarIcon } from '@heroicons/react/24/outline';
 import { lusitana } from '@/app/ui/fonts';
 import { Revenue } from '@/app/lib/definitions';
+import Link from 'next/link'; // ← 追加
 
 // This component is representational only.
 // For data visualization UI, check out:
@@ -28,6 +29,7 @@ export default async function RevenueChart({
       <h2 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>
         Recent Revenue
       </h2>
+      <Link href={link.href} className="..."></Link>
       {/* NOTE: Uncomment this code in Chapter 7 */}
 
       {/* <div className="rounded-xl bg-gray-50 p-4">
